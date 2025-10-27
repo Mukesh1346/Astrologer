@@ -1,0 +1,187 @@
+/* ===== Top Info Section ===== */
+.top-header {
+  background: #fff;
+  border-bottom: 2px solid #f5deb3;
+}
+
+.top-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  flex-wrap: wrap;
+}
+
+.talk a,
+.mail a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.talk a:hover,
+.mail a:hover {
+  color: var(--dark-orange);
+  font-weight: 600;
+}
+
+.mailIconInfo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.vertical-separator {
+  width: 2px;
+  height: 20px;
+  background-color: var(--text-color);
+}
+
+.social a {
+  color: var(--dark-orange);
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.social a:hover {
+  transform: scale(1.2);
+}
+
+/* ===== Navbar Section ===== */
+.navbar {
+  background: #fff;
+  border-top: 2px solid #f5deb3;
+  border-bottom: 2px solid #f5deb3;
+  padding: 0.5rem 2rem;
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  height: 90px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-link a,
+.nav-item-link {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-link.active a,
+.nav-link a:hover,
+.nav-item-link:hover {
+  color: var(--dark-orange);
+}
+
+/* Dropdown */
+.dropdown-menu {
+  background: #fff;
+  border-radius: 6px;
+  padding: 0.5rem 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu .dropdown-item a {
+  color: var(--text-color);
+  display: block;
+  padding: 0.5rem 1.2rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item a:hover {
+  color: var(--dark-orange);
+  background: rgba(245, 222, 179, 0.3);
+}
+
+/* Chat Now Button */
+.chat-now-button {
+  background: var(--dark-orange);
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.chat-now-button a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.chat-now-button:hover {
+  background-color: #e25d0e;
+}
+
+/* ===== Responsive ===== */
+.navbar-toggler {
+  display: none;
+  cursor: pointer;
+}
+
+.menu {
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+@media (max-width: 992px) {
+  .top-info {
+    display: none;
+  }
+
+  .navbar-logo {
+    height: 70px;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    background: var(--color-orange);
+    display: none;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-link a,
+  .nav-item-link {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+
+  .dropdown-menu {
+    position: static !important;
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  .chat-now-button {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-logo {
+    height: 60px;
+  }
+}

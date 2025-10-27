@@ -1,0 +1,254 @@
+.content_title {
+    font-family: Playfair Display;
+    color: var(--text-color);
+    letter-spacing: 3px;
+    margin-left: 5%;
+  }
+  
+  .content_title h2 {
+    font-weight: 700;
+  }
+
+  .Panchangdetail {
+    margin-left: 5%;
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+
+  .TopPanchang {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  .panchangdate h2 {
+    font-size: 1.5rem;
+    font-family: Playfair Display;
+    color: var(--text-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .panchangdate h4 {
+    color: black;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  
+  .detailpanchangbtn a {
+    text-decoration: none;
+    background: var(--dark-orange);
+    color: white;
+    border-radius: 0.25rem;
+    font-family: Playfair Display;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 0.75rem;
+  }
+
+  .currentdate {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .currentdate hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid black;
+    margin: 0 10px;
+  }
+  
+  .currentdate span {
+    padding: 0 10px;
+  }
+  
+  .sunrise, .Moonrise {
+    color: white;
+    text-align: center;
+  }
+  
+  
+  .sunrise {
+    background: var(--dark-orange);
+  }
+
+  .sunrise  img {
+    width: 50%;
+  }
+
+  .Moonrise h1, .sunrise h1 {
+    font-size: 1rem;
+  }
+
+  .sunrise, .Moonrise {
+    color: white;
+    text-align: center;
+  }
+  
+  .Moonrise {
+    background: var(--dark-blue);
+  }
+
+  .Moonrise  img {
+    width: 50%;
+  }
+
+  .bighr {
+    color: var(--dark-orange);
+    border: 1px solid;
+  }
+
+  .outsideborder {
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+  }
+
+  .service_title {
+    font-family: Playfair Display;
+    color: var(--text-color);
+    letter-spacing: 3px;
+    text-align: center;
+  }
+  
+  .service_title h2 {
+    font-weight: 700;
+  }
+  
+
+  .serviceContainer {
+    background: white;
+  }
+  
+  .hinditext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .closehand {
+    margin: auto;
+    text-align: center;
+  }
+  
+  .closehand img {
+    max-width: 30%;
+    height: auto;
+  }
+  
+  .closehand p {
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #000;
+  }
+  
+  .topbanner {
+    background: linear-gradient(90.77deg, #ffffff 0.66%, #ff9933 101.24%);
+    display: flex;
+    padding: 2rem 3rem;
+    align-items: center;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2),
+                0 6px 10px rgba(0, 0, 0, 0.15),
+                0 9px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .topbannerText {
+    max-width: 70%;
+    margin: auto;
+  }
+  
+  .topbannerText p {
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+
+  .bannerimg img {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    border-radius: 50px;
+    animation: rotate360 7s linear infinite; 
+  }
+
+  .topbannerText {
+    max-width: 70%;
+    margin: auto;
+  }
+  
+  .topbannerText p {
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+
+  .panchang-btn {
+    background: var(--dark-orange);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.6rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .panchang-btn:hover {
+    background: #ff7700;
+  }
+
+  .mainbg {
+    background-color: var(--bg-light-cream);
+}
+  
+  @keyframes rotate360 {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+
+
+@media (max-width: 768px){
+    .reverceColumn{
+        flex-direction: column-reverse;
+      }
+
+      .Panchangdetail {
+        margin: 0;
+      }
+      .panchangdate h2 {
+        font-size: 1rem;
+      }
+      
+      .detailpanchangbtn a {
+        padding: 1rem 0.50rem;
+      }
+
+      .topbannerText p {
+        font-size: 12px;
+        margin-bottom: 0;
+      }
+    
+      .topbanner {
+        padding: 1rem;
+      }
+      .topbannerText p {
+        font-size: 12px;
+        margin-bottom: 0;
+      }
+     
+      .arrowrender a {
+        text-decoration: none;
+        color: black;
+        font-size: 2rem;
+      }
+
+      .service-name h5 {
+        font-size: 0.75rem;
+      }
+
+    }
