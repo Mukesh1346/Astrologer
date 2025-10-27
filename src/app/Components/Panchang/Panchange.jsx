@@ -13,6 +13,8 @@ import MoonDown from "@/app/Assets/Images/MoonDown.png";
 import pray from "@/app/Assets/Images/pray.png";
 import Servicetop from "@/app/Assets/Images/Bithchart.jpg";
 
+
+
 import "./panchange.css";
 
 export default function Panchange() {
@@ -52,8 +54,8 @@ export default function Panchange() {
   // ✅ Fetch Data Functions
   const getDayData = async () => {
     try {
-      const res = await axios.get("https://www.api.vedicjyotishe.com/api/get-panchang");
-      setDay(res.data.data[0]);
+    //   const res = await axios.get("https://www.api.vedicjyotishe.com/api/get-panchang");
+      // setDay(res.data.data[0]);
     } catch (error) {
       console.error("Error fetching Panchang data:", error);
     }
@@ -61,8 +63,8 @@ export default function Panchange() {
 
   const getMonthData = async () => {
     try {
-      const res = await axios.get("https://www.api.vedicjyotishe.com/api/get-month");
-      setMonth(res.data.data[0]);
+      // const res = await axios.get("https://www.api.vedicjyotishe.com/api/get-month");
+      // setMonth(res.data.data[0]);
     } catch (error) {
       console.error("Error fetching month data:", error);
     }
@@ -70,8 +72,8 @@ export default function Panchange() {
 
   const getSamvatData = async () => {
     try {
-      const res = await axios.get("https://www.api.vedicjyotishe.com/api/get-samvat");
-      setSamvat(res.data.data[0]);
+      // const res = await axios.get("https://www.api.vedicjyotishe.com/api/get-samvat");
+      // setSamvat(res.data.data[0]);
     } catch (error) {
       console.error("Error fetching samvat data:", error);
     }
@@ -79,8 +81,8 @@ export default function Panchange() {
 
   const getArrowData = async () => {
     try {
-      const res = await axios.get("https://www.api.vedicjyotishe.com/api/get-kundali-service");
-      setArrowData(res.data.data);
+      // const res = await axios.get("https://www.api.vedicjyotishe.com/api/get-kundali-service");
+      // setArrowData(res.data.data);
     } catch (error) {
       console.error("Error fetching kundali data:", error);
     }
@@ -88,9 +90,9 @@ export default function Panchange() {
 
   const getServiceData = async () => {
     try {
-      const res = await axios.get("https://www.api.vedicjyotishe.com/api/get-service");
-      const reverseData = res.data.data.reverse();
-      setServices(reverseData);
+      // const res = await axios.get("https://www.api.vedicjyotishe.com/api/get-service");
+      // const reverseData = res.data.data.reverse();
+      // setServices(reverseData);
     } catch (error) {
       console.error("Error fetching services:", error);
     }
@@ -107,7 +109,7 @@ export default function Panchange() {
   return (
    <>
    <div className="mainbg">
-   <div className="container">
+   <div className="container-fluid">
       <div className="row reverceColumn">
         {/* === Panchang Left Section === */}
         <div className="col-md-4 py-2">
