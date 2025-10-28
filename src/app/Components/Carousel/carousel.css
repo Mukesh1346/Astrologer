@@ -1,0 +1,51 @@
+.nakshatra-carousel {
+    background-image: url("../../Assets//Images/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+        flex-direction: column;
+        height: 482px;
+        justify-content: center;
+    width: 100%;
+   
+    padding: 1rem 0;
+  }
+
+  .TitleSection{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .CarouselTitle{
+    color: #ae8f61;
+  }
+  
+  .nakshatra-item {
+    padding: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .nakshatra-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .nakshatra-img-wrapper {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+  }
+  
+  .nakshatra-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .nakshatra-name {
+    color: #000000;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  

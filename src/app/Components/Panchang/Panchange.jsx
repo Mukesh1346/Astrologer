@@ -230,7 +230,7 @@ export default function Panchange() {
                 </p>
               </div>
               <div className="arrowrender">
-                <Link href={`/Service-Details/${arrowData[0]?.serviceName || ""}`}>
+                <Link href={`/service-details/${arrowData[0]?.serviceName || ""}`}>
                   <IoMdArrowForward className="Arrow" />
                 </Link>
               </div>

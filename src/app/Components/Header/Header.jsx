@@ -14,6 +14,21 @@ const Header = () => {
   const [activeLink, setActiveLink] = useState("/");
   const [service, setService] = useState([]);
 
+
+
+const products = [
+  {id: 1 , name: "Ruby",url:"/service-details"},
+  {id: 2 , name: "Sapphire",url:"/service-details"},
+  {id: 3 , name: "Emerald",url:"/service-details"},
+  {id: 4 , name: "Diamond",url:"/service-details"},
+  {id: 5 , name: "Pearl",url:"/service-details"},
+  {id: 6 , name: "Product",url:"/service-details"},
+  
+]
+
+
+
+
   const handleLinkClick = (link) => {
     setActiveLink(link);
     setIsNavbarOpen(false);
@@ -93,7 +108,7 @@ const Header = () => {
           </div>
 
           {/* Navbar Links */}
-          <ul className={`nav-links ${isNavbarOpen ? "active" : ""}`}>
+          <ul className={`nav-links  mobileMenu  ${isNavbarOpen ? "active" : ""}`}>
             <li className={`nav-link ${activeLink === "/" ? "active" : ""}`}>
               <Link href="/" onClick={() => handleLinkClick("/")}>Home</Link>
             </li>
@@ -130,6 +145,34 @@ const Header = () => {
               </ul>
             </li>
 
+            <li className="dropdown nav-link">
+              <span
+                className="nav-item-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Our Products
+              </span>
+              <ul className="dropdown-menu">
+                {products.map((item, index) => (
+                  <li className="dropdown-item" key={index}>
+                    <Link
+                      href={item.url}
+       
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+                <li className="dropdown-item">
+                  <Link href="/OurServices" onClick={() => handleLinkClick("/OurServices")}>
+                    More Services...
+                  </Link>
+                </li>
+              </ul>
+            </li>
+
+
             <li className={`nav-link ${activeLink === "/Blog" ? "active" : ""}`}>
               <Link href="/Blog" onClick={() => handleLinkClick("/Blog")}>Blog</Link>
             </li>
@@ -155,3 +198,12 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
+
+
+
+
+
+// 51% 49% 0% 100% / 50% 93% 7% 50% 

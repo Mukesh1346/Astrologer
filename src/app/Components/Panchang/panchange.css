@@ -271,4 +271,22 @@
         font-size: 0.75rem;
       }
 
+      .mainbg {
+        padding-top: 20px;
+      }
+
+      .closehand img {
+        max-width: 20%;
+        height: auto;
+      }
+
+      .bannerimg img {
+        height: 50px;
+        width: 50px;
+        position: relative;
+        border-radius: 50px;
+        animation: rotate360 7s linear infinite; 
+      }
+      
+
     }

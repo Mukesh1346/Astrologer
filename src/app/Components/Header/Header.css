@@ -107,7 +107,7 @@
 
 /* Chat Now Button */
 .chat-now-button {
-  background: var(--dark-orange);
+  background: rgb(251, 173, 29);
   padding: 0.5rem 1.5rem;
   border-radius: 50px;
   transition: background-color 0.3s ease;
@@ -134,6 +134,8 @@
   font-size: 2rem;
   color: var(--text-color);
 }
+
+
 
 @media (max-width: 992px) {
   .top-info {
@@ -179,6 +181,14 @@
     margin-top: 1rem;
   }
 }
+
+@media (max-width:768px){
+  .mobileMenu{
+    background-color:var(--dark-orange) !important;
+  }
+  
+}
+
 
 @media (max-width: 576px) {
   .navbar-logo {

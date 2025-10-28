@@ -1,0 +1,105 @@
+.sticky-enquiry-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  
+  /* .enquiry-icon {
+    background: linear-gradient(135deg, #ffcc00, #ff8800);
+    color: white;
+    font-size: 1.8rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  } */
+
+  .astrologerImgIcon{
+    height: 85px;
+    width: 150px;
+  }
+  
+  .enquiry-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .inputSec{
+    background: linear-gradient(90deg, #ffcc33,#e9a74cc5 );
+  }
+  .enquiry-form {
+    position: absolute;
+    bottom: 90px;
+    right: 30px;
+    width: 380px;
+    background: #fffdf3;
+    border-radius: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: all 0.4s ease;
+  }
+  
+  .sticky-enquiry-container.open .enquiry-form {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  
+  /* Label and input smaller font */
+  .enquiry-form .form-label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #444;
+  }
+  
+  .enquiry-form input,
+  .enquiry-form textarea {
+    font-size: 0.85rem;
+  }
+  .btnSubmit{
+    background: linear-gradient(135deg, #ff9f1c 0%, #ff7a00 100%);
+    color: white !important; 
+}
+  
+  /* Button styling */
+  .enquiry-form .btn-warning {
+    border: none;
+    font-weight: 600;
+  }
+  
+  .enquiry-form .btn-warning:hover {
+  background-color:   linear-gradient(135deg, #ff9f1c 0%, #ff7a00 100%);
+  }
+  
+  /* Optional glowing effect */
+  .enquiry-icon::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: radial-gradient(rgba(255, 204, 0, 0.4), transparent 70%);
+    animation: pulse 2s infinite;
+    z-index: -1;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.9);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1.3);
+      opacity: 0;
+    }
+  }
+  
