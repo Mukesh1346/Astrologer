@@ -7,7 +7,7 @@ import Image from "next/image";
 import { IoMenu } from "react-icons/io5";
 import { FaTwitter, FaInstagram, FaFacebookF } from "react-icons/fa";
 // import axios from "axios";
-import brandlogo from "@/app/Assets/Images/Brandlogo.png";
+import brandlogo from "@/app/Assets/Images/BrandLogo.png";
 
 const Header = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
