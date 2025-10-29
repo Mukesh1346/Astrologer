@@ -17,12 +17,12 @@ export default function Home() {
 <VideoLoader/>
   {/* <HeroSection/> */}
   <Banner/>
+  <NakshatraCarousel/>
   <BookAstrologer/>
   <Panchange/>
   <Categories/>
   <Recommended/>
   <Testimonial/> 
-  <NakshatraCarousel/>
     
     </>
   );

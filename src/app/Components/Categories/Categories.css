@@ -76,8 +76,8 @@
     object-fit: contain;
     width: 100% !important;
     height: auto !important;
-    max-width: 120px;
-    max-height: 120px;
+    /* max-width: 120px;
+    max-height: 120px; */
   }
   
   /* Content */

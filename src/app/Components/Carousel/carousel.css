@@ -48,4 +48,19 @@
     font-weight: 600;
     font-size: 0.9rem;
   }
+
+
+  @media (max-width:768px){
+    .nakshatra-carousel {
+       height: 250px;
+    }
+    .TitleSection {
+      margin-bottom: 0;
+  }
+
+  .CarouselTitle{
+    color: #ae8f61;
+    font-size: 14px;
+  }
+  }
   

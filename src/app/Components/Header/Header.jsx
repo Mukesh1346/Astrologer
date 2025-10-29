@@ -58,8 +58,10 @@ const products = [
             <div className="talk">
               <h5>
                 Talk to Astrologers:{" "}
-                <a href="tel:+916366052167" target="_blank" rel="noopener noreferrer">
-                  +91 6366052167
+                <a href="tel:+91123456789
+" target="_blank" rel="noopener noreferrer">
+                  +91 123456789
+
                 </a>
               </h5>
             </div>
@@ -67,8 +69,10 @@ const products = [
             <div className="mailIconInfo">
               <div className="mail">
                 <h5>
-                  <a href="mailto:VedicJyotishe@outlook.com" target="_blank" rel="noopener noreferrer">
-                    VedicJyotishe@outlook.com
+                  <a href="mailto:acb@outlook.com
+" target="_blank" rel="noopener noreferrer">
+                    acb@outlook.com
+
                   </a>
                 </h5>
               </div>
@@ -99,7 +103,7 @@ const products = [
         <div className="container-fluid justify-content-between align-items-center">
           {/* Brand Logo */}
           <Link href="/" onClick={() => handleLinkClick("/")} className="navbar-brand p-0">
-            <Image src={brandlogo} alt="Vedic Jyotishe" className="navbar-logo" priority />
+            <Image src={brandlogo} alt="Jyotishe " className="navbar-logo" priority />
           </Link>
 
           {/* Mobile Menu Icon */}
@@ -114,7 +118,7 @@ const products = [
             </li>
 
             <li className={`nav-link ${activeLink === "/About" ? "active" : ""}`}>
-              <Link href="/About" onClick={() => handleLinkClick("/About")}>About</Link>
+              <Link href="/about-us" onClick={() => handleLinkClick("/about-us")}>About</Link>
             </li>
 
             {/* Services Dropdown */}
@@ -186,7 +190,8 @@ const products = [
             </li>
 
             <li className="chat-now-button">
-              <a href="https://wa.me/916366052167" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/91123456789
+" target="_blank" rel="noopener noreferrer">
                 CHAT NOW
               </a>
             </li>

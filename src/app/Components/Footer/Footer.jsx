@@ -63,7 +63,7 @@ const Footer = () => {
           <div className="col-md-4 mt-3">
             <div className="weblogo py-3">
               <Link href="/">
-                <Image src={logo} alt="Vedic Jyotishe" height={150} className="img-fluid" />
+                <Image src={logo} alt="Jyotishe " height={150} className="img-fluid" />
               </Link>
             </div>
             <div className="imgdesc">
@@ -102,8 +102,10 @@ const Footer = () => {
                   </div>
                   <div className="callnumber">
                     <p>Phone</p>
-                    <a href="tel:+916366052167">
-                      <h5>+91 6366052167</h5>
+                    <a href="tel:+91123456789
+">
+                      <h5>+91 123456789
+</h5>
                     </a>
                   </div>
                 </div>
@@ -113,8 +115,10 @@ const Footer = () => {
                   </div>
                   <div className="mailid">
                     <p>Email id</p>
-                    <a href="mailto:VedicJyotishe@outlook.com">
-                      <h5>VedicJyotishe@outlook.com</h5>
+                    <a href="mailto:acb@outlook.com
+">
+                      <h5>acb@outlook.com
+</h5>
                     </a>
                   </div>
                 </div>
@@ -160,7 +164,7 @@ const Footer = () => {
         <hr className="hr-line" />
         <p>
           All Right Reserved &#169; {new Date().getFullYear()}{" "}
-          <Link href="/" className="Linkcss"><b>Vedic Jyotishe</b></Link> Design by{" "}
+          <Link href="/" className="Linkcss"><b>Jyotishe </b></Link> Design by{" "}
           <a
             href="https://www.digiindiasolutions.com/"
             className="Linkcss"

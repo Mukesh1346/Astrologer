@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./bookAstrologer.css";
 import { FaRegComments } from "react-icons/fa";
 import Image from "next/image";
-import Pic1 from "@/app/Assets/Images/astrologerT.png"
+import Pic1 from'@/app/Assets/Images/astrologerT.png'
 
 const BookAstrologer = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -102,4 +102,15 @@
       opacity: 0;
     }
   }
+
+
+  @media (max-width:768px){
+    .enquiry-form {
+      position: absolute;
+      bottom: 100px;
+      right: 70px;
+      width: 250px;
+    }
+
+  }
   

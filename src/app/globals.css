@@ -46,6 +46,63 @@ a {
   text-decoration: none;
 }
 
+
+
+
+.pagetop {
+  text-align: center;
+}
+
+.pagetop .pagetitle {
+  color: var(--dark-orange);
+  font-family: Playfair Display ;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.pagetop .changepage {
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  }
+
+
+  
+.changepage p a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  }
+  
+  .changepage p a:hover {
+    position: relative;
+    color: #000; 
+    text-decoration: none;
+  }
+  
+  .changepage p a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 100%;
+    height: 2px; 
+    background-color: var(--dark-blue); 
+    transform: scaleX(0); 
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .changepage p a:hover::after {
+    transform: scaleX(1); 
+  }
+  
+  .changepage p span {
+    color: var(--dark-orange);
+    font-weight: 500;
+  }
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
