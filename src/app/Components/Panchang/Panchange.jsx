@@ -54,7 +54,7 @@ export default function Panchange() {
   // ✅ Fetch Data Functions
   const getDayData = async () => {
     try {
-    //   const res = await axios.get("https://www.api.vedicjyotishe.com/api/get-panchang");
+    //   const res = await axios.get("https://www.api.astrologer.com/api/get-panchang");
       // setDay(res.data.data[0]);
     } catch (error) {
       console.error("Error fetching Panchang data:", error);
@@ -63,7 +63,7 @@ export default function Panchange() {
 
   const getMonthData = async () => {
     try {
-      // const res = await axios.get("https://www.api.vedicjyotishe.com/api/get-month");
+      // const res = await axios.get("https://www.api.astrologer.com/api/get-month");
       // setMonth(res.data.data[0]);
     } catch (error) {
       console.error("Error fetching month data:", error);
@@ -72,7 +72,7 @@ export default function Panchange() {
 
   const getSamvatData = async () => {
     try {
-      // const res = await axios.get("https://www.api.vedicjyotishe.com/api/get-samvat");
+      // const res = await axios.get("https://www.api.astrologer.com/api/get-samvat");
       // setSamvat(res.data.data[0]);
     } catch (error) {
       console.error("Error fetching samvat data:", error);
@@ -81,7 +81,7 @@ export default function Panchange() {
 
   const getArrowData = async () => {
     try {
-      // const res = await axios.get("https://www.api.vedicjyotishe.com/api/get-kundali-service");
+      // const res = await axios.get("https://www.api.astrologer.com/api/get-kundali-service");
       // setArrowData(res.data.data);
     } catch (error) {
       console.error("Error fetching kundali data:", error);
@@ -90,7 +90,7 @@ export default function Panchange() {
 
   const getServiceData = async () => {
     try {
-      // const res = await axios.get("https://www.api.vedicjyotishe.com/api/get-service");
+      // const res = await axios.get("https://www.api.astrologer.com/api/get-service");
       // const reverseData = res.data.data.reverse();
       // setServices(reverseData);
     } catch (error) {
@@ -242,7 +242,7 @@ export default function Panchange() {
                   <div key={index} className="col-md-4 col-6 mt-3 mb-4">
                     <div className="text-center">
                       <Image
-                        src={`https://www.api.vedicjyotishe.com/${service.serviceLogo}`}
+                        src={`https://www.api.astrologer.com/${service.serviceLogo}`}
                         alt={service.title}
                         width={80}
                         height={80}

@@ -1,116 +1,150 @@
 .sticky-enquiry-container {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 9999;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
-  
-  /* .enquiry-icon {
-    background: linear-gradient(135deg, #ffcc00, #ff8800);
-    color: white;
-    font-size: 1.8rem;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  } */
-
-  .astrologerImgIcon{
-    height: 85px;
-    width: 150px;
-  }
-  
-  .enquiry-icon:hover {
-    transform: scale(1.1);
-  }
-  
-  .inputSec{
-    background: linear-gradient(90deg, #ffcc33,#e9a74cc5 );
-  }
-  .enquiry-form {
-    position: absolute;
-    bottom: 90px;
-    right: 30px;
-    width: 380px;
-    background: #fffdf3;
-    border-radius: 1rem;
-    opacity: 0;
-    transform: translateY(20px);
-    pointer-events: none;
-    transition: all 0.4s ease;
-  }
-  
-  .sticky-enquiry-container.open .enquiry-form {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-  }
-  
-  /* Label and input smaller font */
-  .enquiry-form .form-label {
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: #444;
-  }
-  
-  .enquiry-form input,
-  .enquiry-form textarea {
-    font-size: 0.85rem;
-  }
-  .btnSubmit{
-    background: linear-gradient(135deg, #ff9f1c 0%, #ff7a00 100%);
-    color: white !important; 
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
-  
-  /* Button styling */
-  .enquiry-form .btn-warning {
-    border: none;
-    font-weight: 600;
-  }
-  
-  .enquiry-form .btn-warning:hover {
-  background-color:   linear-gradient(135deg, #ff9f1c 0%, #ff7a00 100%);
-  }
-  
-  /* Optional glowing effect */
-  .enquiry-icon::after {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: radial-gradient(rgba(255, 204, 0, 0.4), transparent 70%);
-    animation: pulse 2s infinite;
-    z-index: -1;
-  }
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(0.9);
-      opacity: 0.7;
-    }
-    100% {
-      transform: scale(1.3);
-      opacity: 0;
-    }
+
+/* Icon */
+.astrologerImgIcon {
+  height: 85px;
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.enquiry-icon:hover .astrologerImgIcon {
+  transform: scale(1.1);
+}
+
+/* Enquiry form with blob shape */
+.enquiry-form {
+  position: absolute;
+  bottom: 90px;
+  right: 90px;
+  width: 320px; /* smaller width for compact shape */
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  border-radius: 51% 49% 0% 100% / 50% 93% 7% 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  padding: 1.8rem 1.3rem 1.5rem;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+/* Show form when open */
+.sticky-enquiry-container.open .enquiry-form {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Heading */
+.enquiry-form h5 {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Labels */
+.enquiry-form .form-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0.2rem;
+}
+
+/* Inputs & textarea styled according to shape */
+.enquiry-form input,
+.enquiry-form textarea {
+  font-size: 0.8rem;
+  color: #000000;
+  /* background: rgba(255, 255, 255, 0.15); */
+  border: none;
+  border-radius: 2rem;
+  padding: 0.45rem 1rem;
+  width: 85%; /* decreased width for better shape alignment */
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  display: block;
+}
+
+/* Textarea smaller and rounded */
+.enquiry-form textarea {
+  resize: none;
+  height: 60px;
+  border-radius: 1.5rem;
+}
+
+/* Focus glow */
+.enquiry-form input:focus,
+.enquiry-form textarea:focus {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+/* Placeholder */
+.enquiry-form input::placeholder,
+.enquiry-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Submit button */
+.btnSubmit {
+  background: #fff !important;
+  color: #ff5722 !important;
+  border: none;
+  font-weight: 600;
+  padding: 0.55rem;
+  border-radius: 1.5rem;
+  width: 85%;
+  margin: 0.5rem auto 0;
+  display: block;
+  box-shadow: 0 3px 6px rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* .inputBox{
+  width: 60% !important;
+} */
+
+.btnSubmit:hover {
+  transform: scale(1.05);
+}
+
+.formSec{
+  padding-left:10px;
+}
+
+.buttonSec{
+   text-align: right;
+}
+
+.btnSubmit{
+  width: 50%;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .enquiry-form {
+    right: 60px;
+    width: 260px;
+    padding: 1.3rem 1rem;
   }
 
-
-  @media (max-width:768px){
-    .enquiry-form {
-      position: absolute;
-      bottom: 100px;
-      right: 70px;
-      width: 250px;
-    }
-
+  .enquiry-form input,
+  .enquiry-form textarea,
+  .btnSubmit {
+    width: 90%;
   }
-  
+}

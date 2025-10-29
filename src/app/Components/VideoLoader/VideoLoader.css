@@ -18,6 +18,89 @@
     object-fit: cover;
   }
 
+/* Curtain wrapper that appears after video */
+.curtain-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  z-index: 10000;
+  pointer-events: none;
+}
+
+.curtain {
+  flex: 1;
+  background: black;
+  transform-origin: center;
+  transition: transform 1.5s ease-in-out;
+}
+
+/* Left and right halves start closed and slide outward */
+.curtain.left {
+  animation: openLeft 1.5s ease-in-out forwards;
+}
+
+.curtain.right {
+  animation: openRight 1.5s ease-in-out forwards;
+}
+
+@keyframes openLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes openRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* Optional mobile version – curtains open vertically on small screens */
+@media (max-width: 768px) {
+  .curtain-wrapper {
+    flex-direction: column;
+  }
+
+  .curtain.left {
+    animation: openTop 1.5s ease-in-out forwards;
+  }
+
+  .curtain.right {
+    animation: openBottom 1.5s ease-in-out forwards;
+  }
+
+  @keyframes openTop {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100%);
+    }
+  }
+
+  @keyframes openBottom {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(100%);
+    }
+  }
+}
+
+.video-loader-container.fade-out {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;                      
+}
 
 
   

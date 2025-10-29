@@ -33,7 +33,7 @@ const Footer = () => {
     }
 
     try {
-      await axios.post("https://www.api.vedicjyotishe.com/api/create-newsletter", { email });
+      await axios.post("https://www.api.astrologer.com/api/create-newsletter", { email });
       setEmail("");
       setError("");
       Swal.fire({

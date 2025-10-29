@@ -1,12 +1,14 @@
+   "use client"
 import React, { useState, useEffect } from "react";
-import axios from "axios"; // Import axios
+// import axios from "axios"; 
 import "./Contact.css";
 import { FaAngleRight, FaPhoneAlt } from "react-icons/fa";
 import { IoLocation, IoMail } from "react-icons/io5";
-import Designstar from "../../Assets/DesignStar.png";
-import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import Designstar from "@/app/Assets/Images/DesignStar.png";
+import Link from "next/link";
+import Head from "next/head";
 import Swal from "sweetalert2"; // Import SweetAlert2
+import Image from "next/image";
 
 const Contact = () => {
   useEffect(() => {
@@ -29,6 +31,13 @@ const Contact = () => {
   };
 
   // Handle form data change
+
+
+
+
+
+
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -40,7 +49,8 @@ const Contact = () => {
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
+    console.log(e)
     // Check if all required fields are filled
     if (!formData.name || !formData.email || !formData.phone || !formData.comment) {
       Swal.fire({
@@ -53,9 +63,9 @@ const Contact = () => {
 
     try {
       // Make API request to send form data
-      const response = await axios.post("https://www.api.vedicjyotishe.com/api/send-record", formData);
-      
-      if (response.data.success) {
+      // const response = await axios.post("https://www.api.astrologer.com/api/send-record", formData);
+         
+      if (e) {
         Swal.fire({
           icon: "success",
           title: "Thank You!",
@@ -76,7 +86,7 @@ const Contact = () => {
 
   return (
     <>
-      <Helmet>
+       <Head>
         <title>Contact Us - Vedic Jyotishe</title>
         <meta
           name="description"
@@ -95,10 +105,10 @@ const Contact = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://www.vedicjyotishe.com/contact"
+          content="https://www.astrologer.com/contact"
         />
         <meta name="robots" content="index, follow" />
-      </Helmet>
+        </Head>
 
       <section>
         <div className="container">
@@ -109,9 +119,9 @@ const Contact = () => {
               </div>
               <div className="changepage">
                 <p>
-                  <Link
+                  <Link href="/"
                     onClick={handleActiveChange}
-                    to={"/"}
+                    
                     className="render"
                   >
                     Home
@@ -140,22 +150,21 @@ const Contact = () => {
               <div className="col-md-3 info-box">
                 <IoLocation className="icon" />
                 <p>
-                  Valmark Cityville, Doddakamanahalli, Hulimavu House #528,
-                  Block # 14, Tejeswini Nagar BENGALURU, KARNATAKA 560076 India
+                  Valmark Cityville, Doddakamanahalli, Hulimavu House #528, India
                 </p>
               </div>
               <div className="col-md-3 info-box">
                 <IoMail className="icon" />
                 <p>
                   <a href="mailto:VedicJyotishe@outlook.com">
-                    VedicJyotishe@outlook.com
+                    astrologer@outlook.com
                   </a>
                 </p>
               </div>
               <div className="col-md-3 info-box">
                 <FaPhoneAlt className="icon" />
                 <p>
-                  <a href="tel:+916366052167">+91 6366052167</a>
+                  <a href="tel:+132332452167">+91 7827433992</a>
                 </p>
               </div>
             </div>
@@ -164,7 +173,7 @@ const Contact = () => {
             <div className="row form-container">
               <div className="col-md-6">
                 <div className="designstar">
-                  <img src={Designstar} alt="" />
+                  <Image src={Designstar} alt="" />
                 </div>
                 <h3>Get In Touch</h3>
                 <p className="contact-text">
@@ -220,7 +229,7 @@ const Contact = () => {
                       name="comment"
                       value={formData.comment}
                       onChange={handleChange}
-                      required
+                    
                     ></textarea>
                   </div>
                   <button type="submit" className="submit-btn">

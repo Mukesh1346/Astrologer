@@ -16,15 +16,15 @@ const Header = () => {
 
 
 
-const products = [
-  {id: 1 , name: "Ruby",url:"/service-details"},
-  {id: 2 , name: "Sapphire",url:"/service-details"},
-  {id: 3 , name: "Emerald",url:"/service-details"},
-  {id: 4 , name: "Diamond",url:"/service-details"},
-  {id: 5 , name: "Pearl",url:"/service-details"},
-  {id: 6 , name: "Product",url:"/service-details"},
-  
-]
+  const products = [
+    { id: 1, name: "Ruby", url: "/service-details" },
+    { id: 2, name: "Sapphire", url: "/service-details" },
+    { id: 3, name: "Emerald", url: "/service-details" },
+    { id: 4, name: "Diamond", url: "/service-details" },
+    { id: 5, name: "Pearl", url: "/service-details" },
+    { id: 6, name: "Product", url: "/service-details" },
+
+  ]
 
 
 
@@ -36,7 +36,7 @@ const products = [
 
   // const getApiData = async () => {
   //   try {
-  //     const res = await axios.get("https://www.api.vedicjyotishe.com/api/get-service");
+  //     const res = await axios.get("https://www.api.astrologer.com/api/get-service");
   //     const data = res.data.data;
   //     const filteredData = data.filter((x) => x.dropDownStatus === "True");
   //     setService(filteredData);
@@ -162,7 +162,7 @@ const products = [
                   <li className="dropdown-item" key={index}>
                     <Link
                       href={item.url}
-       
+
                     >
                       {item.name}
                     </Link>
@@ -182,7 +182,7 @@ const products = [
             </li>
 
             <li className={`nav-link ${activeLink === "/Contact" ? "active" : ""}`}>
-              <Link href="/Contact" onClick={() => handleLinkClick("/Contact")}>Contact</Link>
+              <Link href="/contact-us" onClick={() => handleLinkClick("/contact-us")}>Contact</Link>
             </li>
 
             <li className={`nav-link ${activeLink === "/Socialfeed" ? "active" : ""}`}>

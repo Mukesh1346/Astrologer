@@ -37,7 +37,7 @@ const About = () => {
         />
         <meta property="og:image" content="/images/vedic-astrology-banner.jpg" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.vedicjyotishe.com/about" />
+        <meta property="og:url" content="https://www.astrologer.com/about" />
         <meta name="robots" content="index, follow" />
       </Head>
 

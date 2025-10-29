@@ -1,9 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import "./bookAstrologer.css";
-import { FaRegComments } from "react-icons/fa";
 import Image from "next/image";
-import Pic1 from'@/app/Assets/Images/astrologerT.png'
+import Pic1 from "@/app/Assets/Images/astrologerT.png";
 
 const BookAstrologer = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,30 +14,32 @@ const BookAstrologer = () => {
       onMouseLeave={() => setIsOpen(false)}
     >
       <div className="enquiry-icon">
-      <Image src={Pic1} alt="" className="astrologerImgIcon"/>
-      
-        {/* <FaRegComments /> */}
+        <Image src={Pic1} alt="Astrologer" className="astrologerImgIcon" />
       </div>
 
-      <div className="enquiry-form shadow-lg p-3 bg-light rounded">
-        <h5 className="text-center mb-3">Book an Astrologer</h5>
-        <form>
-          <div className="mb-2">
-            <label className="form-label">Name</label>
-            <input type="text" className="form-control inputSec"  placeholder="Your Name" />
+      <div className="enquiry-form shadow-lg">
+        <h5>Book an Astrologer</h5>
+       <div className="formSec">
+       <form>
+          <div className="mb-2 ">
+            <label className="form-label ms-4">Name</label>
+            <input type="text" className="inputBox" placeholder="Your Name" />
           </div>
-          <div className="mb-2">
-            <label className="form-label">Phone</label>
-            <input type="tel" className="form-control inputSec" placeholder="Your Number" />
+          <div className="mb-2 ">
+            <label className="form-label ms-4">Phone</label>
+            <input type="tel"  className="inputBox" placeholder="Your Number" />
           </div>
-          <div className="mb-2">
-            <label className="form-label">Question</label>
-            <textarea className="form-control inputSec" rows="2" placeholder="Your Question"></textarea>
+          <div className="mb-2 ">
+            <label className="form-label ms-4">Question</label>
+            <textarea  className="inputBox" placeholder="Your Question"></textarea>
           </div>
-          <button type="submit" className="btn btnSubmit w-100 mt-2">
+          <div className="buttonSec">
+          <button type="submit" className="btn btnSubmit">
             Submit
           </button>
+          </div>
         </form>
+       </div>
       </div>
     </div>
   );
