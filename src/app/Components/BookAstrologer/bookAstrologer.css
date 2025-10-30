@@ -48,7 +48,7 @@
 /* Heading */
 .enquiry-form h5 {
   font-size: 15px;
-  color: #fff;
+  color: #000000;
   font-weight: 600;
   letter-spacing: 0.5px;
   text-align: center;
@@ -83,7 +83,7 @@
 /* Textarea smaller and rounded */
 .enquiry-form textarea {
   resize: none;
-  height: 60px;
+  /* height: 60px; */
   border-radius: 1.5rem;
 }
 
@@ -124,7 +124,8 @@
 }
 
 .formSec{
-  padding-left:10px;
+  /* padding-left:40px; */
+  width: 90%;
 }
 
 .buttonSec{
@@ -132,8 +133,38 @@
 }
 
 .btnSubmit{
-  width: 50%;
+  width: 40%;
 }
+
+.inputBox1{
+  padding-left: 10px;
+
+}
+
+.inputBox2{
+  padding-left: 20px;
+
+}
+
+.inputSection2{
+  padding-left: 20px;
+
+}
+.inputSection3{
+  padding-left: 85px;
+
+}
+
+.inputSection4{
+  padding-left: 30px;
+
+}
+
+.inputBox4{
+  padding-left: 10px;
+
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .enquiry-form {

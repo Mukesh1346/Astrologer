@@ -21,19 +21,19 @@ const BookAstrologer = () => {
         <h5>Book an Astrologer</h5>
        <div className="formSec">
        <form>
-          <div className="mb-2 ">
+          <div className="mb-2 inputSection1">
             <label className="form-label ms-4">Name</label>
-            <input type="text" className="inputBox" placeholder="Your Name" />
+            <input type="text" className="inputBox1" placeholder="Your Name" />
           </div>
-          <div className="mb-2 ">
+          <div className="mb-2 inputSection2 ">
             <label className="form-label ms-4">Phone</label>
-            <input type="tel"  className="inputBox" placeholder="Your Number" />
+            <input type="tel"  className="inputBox2" placeholder="Your Number" />
           </div>
-          <div className="mb-2 ">
+          <div className="mb-2 inputSection3 ">
             <label className="form-label ms-4">Question</label>
-            <textarea  className="inputBox" placeholder="Your Question"></textarea>
+            <textarea  className="inputBox3"  placeholder="Your Question"></textarea>
           </div>
-          <div className="buttonSec">
+          <div className="buttonSec inputSection4">
           <button type="submit" className="btn btnSubmit">
             Submit
           </button>
